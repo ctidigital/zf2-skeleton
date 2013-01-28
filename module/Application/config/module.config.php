@@ -102,17 +102,5 @@ return array(
                 )
             )
         ),
-        'cache' => array(
-            'memcached' => array(
-                'instance' => 'Doctrine\Memcached',
-            )
-        ),
-        'configuration' => array (
-            'orm_default' => array (
-                'metadata_cache' => 'memcached',
-                'query_cache' => 'memcached',
-                'result_cache' => 'memcached',
-            ),
-        ),
     ),
 );

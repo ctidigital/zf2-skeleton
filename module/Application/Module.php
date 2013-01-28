@@ -25,15 +25,17 @@ class Module
     public function getServiceConfig()
     {
         return array(
-            'Doctrine\Memcached' => function(){
-                // Create Memcache object
-                $memcached = new \Memcached();
-                // Add a server and allocate a separate port
-                // Makes memory monitoring and cache management easier
-                $memcached->addServer('localhost', 11233);
+            'factories' => array(
+                'Doctrine\Memcached' => function(){
+                    // Create Memcache object
+                    $memcached = new \Memcached();
+                    // Add a server and allocate a separate port
+                    // Makes memory monitoring and cache management easier
+                    $memcached->addServer('localhost', 11233);
 
-                return $memcached;
-            },
+                    return $memcached;
+                },
+            ),
         );
     }
 

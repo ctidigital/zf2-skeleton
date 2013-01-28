@@ -1,6 +1,6 @@
 {
-    "name": "cti/zend-framework-2",
-    "description": "Default Zend Framework 2 application",
+    "name": "cti/conference-stream-api",
+    "description": "CTI Conference Stream API",
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
